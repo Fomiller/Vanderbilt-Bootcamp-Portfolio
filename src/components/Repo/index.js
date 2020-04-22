@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     maxWidth: 345,
   },
   media: {
-    height: 240,
+    height: 120,
   },
 });
 
@@ -29,7 +29,7 @@ export default function Repo(props) {
           <CardMedia
           // image section
             className={classes.media}
-            image='/images/GitHub-Mark-120px-plus.png'
+            image='/images/GitHub_Logo.png'
             title="{props.name}"
           />
           <CardContent>
