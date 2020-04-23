@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
@@ -37,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NavBar(props) {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
   return (
     <React.Fragment>
       <CssBaseline />
@@ -48,9 +46,6 @@ export default function NavBar(props) {
                 <Typography className={classes.root}>
                   <Link component={RouterLink} to="/" color="secondary">
                     Home
-                  </Link>
-                  <Link component={RouterLink} to="/contact" color="secondary">
-                    Contact
                   </Link>
                   <Link component={RouterLink} to="/portfolio" color="secondary">
                     Portfolio

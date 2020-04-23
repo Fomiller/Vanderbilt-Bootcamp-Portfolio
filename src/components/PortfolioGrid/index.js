@@ -1,6 +1,5 @@
 import React, {useEffect}  from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { useAppContext } from '../../utils/GlobalContext';
 import API from '../../utils/API';
@@ -37,7 +36,7 @@ export default function PortfolioGrid() {
     return(
       state.repos.map(repo => {
         return(
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} lg={4}>
             <Repo {...repo}/>
           </Grid>
         );
