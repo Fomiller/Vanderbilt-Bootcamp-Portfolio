@@ -44,10 +44,10 @@ export default function NavBar(props) {
             <Container>
               <Toolbar>
                 <Typography className={classes.root}>
-                  <Link component={RouterLink} to="/" color="secondary">
+                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/"} color="secondary">
                     Home
                   </Link>
-                  <Link component={RouterLink} to="/portfolio" color="secondary">
+                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/portfolio"} color="secondary">
                     Portfolio
                   </Link>
                 </Typography>

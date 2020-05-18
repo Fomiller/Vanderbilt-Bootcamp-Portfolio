@@ -31,7 +31,7 @@ export default function Home() {
         </Grid>
         <Grid item xs={12} md={6}>
           <Paper className={classes.paper}>
-            <Image src='/images/Portrait.jpg'/>
+            <Image src={process.env.PUBLIC_URL + '/images/Portrait.jpg'}/>
           </Paper>
         </Grid>
       </Grid>
