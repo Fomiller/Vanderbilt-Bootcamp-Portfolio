@@ -2,21 +2,29 @@ import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import Image from 'material-ui-image';
+import { Typography, Button } from '@material-ui/core';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import EmailIcon from '@material-ui/icons/Email';
 
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  paper: {
-    padding: theme.spacing(),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  },
   container: {
     marginTop: 50,
+    marginBottom: 100,
+  },
+  portrait: {
+    maxHeight: "400px",
+    maxWidth: "400px",
+  },
+  header: {
+    marginBottom: '50px',
+  },
+  wrapper: {
+    height: '75vh'
   }
 }));
 
@@ -25,14 +33,22 @@ export default function Home() {
   const classes = useStyles();
   return(
     <Container className={classes.container}>
-      <Grid container alignItems="center" spacing={3}>
-        <Grid item xs={12} md={6}>
-          <Paper className={classes.paper} component='p'>My Name is Forrest Miller. I am a Graduate of Texas State University with Major in Digital Media. Born and raised in Austin Texas I have just moved here to the Nashville area to persue a career in development. I am currently attending the Vanderbilt Full-stack coding bootcamp where I will be learning JavaScript, React, MySQL and more. I was first introduced to the coding world when I took a intro to coding course for my college degree. From there my interest snowballed into me doing freelance Wordpress development. My most recent freelance job was for a small tech start up called WIN Reality in Austin, Texas. During my time at WIN Reality I was able to do small projects working with the Senior fullstack developer on the team. While working on these projects I was began to understand what a Web Developer truely does. Once I had tasted the thrill of making a project come to life I was hooked. Although I loved what I was doing I decided to leave WIN Reality and attend Vanderbilt coding bootcamp to expand my knowledge and skills within software development.</Paper>
+      <Grid container direction='column' justify='center' alignItems='center' className={classes.wrapper}>
+        <Grid item>
+          <Typography variant="h1" textAlign='center' color="secondary">
+            Forrest Miller
+          </Typography>
         </Grid>
-        <Grid item xs={12} md={6}>
-          <Paper className={classes.paper}>
-            <Image src={process.env.PUBLIC_URL + '/images/Portrait.jpg'}/>
-          </Paper>
+        <Grid item>
+          <Button href='https://github.com/Fomiller' target="_blank" align='center'>
+              <GitHubIcon color='secondary' fontSize='large'/>
+          </Button>
+          <Button href='https://www.linkedin.com/in/forrest-miller-dev/' target="_blank" align='center'>
+            <LinkedInIcon color='secondary' fontSize='large'/>
+          </Button>
+          <Button href='mailto:forrestmillerj@gmail.com' target="_blank" align='center'>
+            <EmailIcon color='secondary' fontSize='large'/>
+          </Button>
         </Grid>
       </Grid>
     </Container>
