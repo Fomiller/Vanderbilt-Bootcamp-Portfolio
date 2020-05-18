@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import { ThemeProvider } from '@material-ui/core/styles'
 import {AppProvider} from './utils/GlobalContext';
 import Home from './pages/home';
+import About from './pages/about';
 import Contact from './pages/contact'
 import Portfolio from './pages/portfolio';
 import NavBar from './components/NavBar';
@@ -17,8 +18,9 @@ function App() {
       <ThemeProvider theme={PortfolioTheme}>
         <Router>
           <NavBar/>
-          <Route exact path ={["/","/home"]} component={Home}/>
-          <Route exact path ="/portfolio" component={Portfolio}/>
+          <Route exact path ={[process.env.PUBLIC_URL + "/", process.env.PUBLIC_URL + "/home"]} component={Home}/>
+          <Route exact path ={process.env.PUBLIC_URL + "/about"} component={About}/>
+          <Route exact path ={process.env.PUBLIC_URL + "/portfolio"} component={Portfolio}/>
         </Router>
         <SimpleBottomNavigation/>
       </ThemeProvider>

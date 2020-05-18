@@ -40,14 +40,17 @@ export default function NavBar(props) {
     <React.Fragment>
       <CssBaseline />
         <ElevationScroll {...props}>
-          <AppBar>
+          <AppBar color='secondary'>
             <Container>
               <Toolbar>
                 <Typography className={classes.root}>
-                  <Link component={RouterLink} to="/" color="secondary">
+                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/"} color="primary" >
                     Home
                   </Link>
-                  <Link component={RouterLink} to="/portfolio" color="secondary">
+                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/about"} color="primary">
+                    About
+                  </Link>
+                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/portfolio"} color="primary">
                     Portfolio
                   </Link>
                 </Typography>
