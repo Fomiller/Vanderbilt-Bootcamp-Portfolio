@@ -52,10 +52,10 @@ export default function Repo(props) {
             })}
           </CardContent>
         <CardActions>
-          <Button size="small" color="secondary" variant="contained" fullWidth  href={props.github}>
+          <Button size="small" color="secondary" variant="contained" fullWidth  href={props.github} target="_blank">
             GitHub
           </Button>
-          <Button size="small" color="secondary" variant="contained" fullWidth  href={props.deployed}>
+          <Button size="small" color="secondary" variant="contained" fullWidth  href={props.deployed} target="_blank">
             Deployed App
           </Button>
         </CardActions>
