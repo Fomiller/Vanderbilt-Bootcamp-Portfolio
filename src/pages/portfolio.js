@@ -1,6 +1,8 @@
 import React from 'react';
 import Container from "@material-ui/core/Container";
 import PortfolioGrid from '../components/PortfolioGrid';
+import PortfolioNew from '../components/portfolio';
+
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -16,8 +18,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Portfolio() {
   const classes = useStyles();
-  
-
   return(
     <Container className={classes.container}>
       <PortfolioGrid/>
