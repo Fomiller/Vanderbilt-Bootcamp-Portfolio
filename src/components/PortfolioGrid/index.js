@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function PortfolioGrid() {
-  document.title = "Portfolio";
   const classes = useStyles();
   const [state, dispatch] = useAppContext()
     

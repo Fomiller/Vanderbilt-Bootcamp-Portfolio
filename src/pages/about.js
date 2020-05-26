@@ -29,8 +29,8 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Home() {
-  document.title = "Home";
+export default function About() {
+  document.title = "Forrest Miller | About";
   const classes = useStyles();
   return(
     <Container className={classes.container}>
