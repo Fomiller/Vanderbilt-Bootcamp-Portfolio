@@ -6,6 +6,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { Link as RouterLink } from 'react-router-dom';
@@ -32,6 +33,17 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: theme.spacing(2),
     },
   },
+  appBar: {
+    backgroundColor: theme.palette.common.black
+  },
+  navlink: {
+    margin: theme.spacing(5),
+    fontSize: '1.3em',
+    '&:hover': {
+      color:theme.palette.secondary.dark,
+      textDecoration: 'none'
+    }
+  }
 }));
 
 export default function NavBar(props) {
@@ -40,22 +52,32 @@ export default function NavBar(props) {
     <React.Fragment>
       <CssBaseline />
         <ElevationScroll {...props}>
-          <AppBar color='secondary'>
-            <Container>
-              <Toolbar>
-                <Typography className={classes.root}>
-                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/"} color="primary" >
-                    Home
-                  </Link>
-                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/about"} color="primary">
+          <AppBar className={classes.appBar}>
+            <Toolbar>
+              <Grid container direction="row" justify="center" alignItems="center">
+                <Grid item>
+                  {/* <Typography variant='h6' className={classes.root}> */}
+                    <Link component={RouterLink} to={process.env.PUBLIC_URL + "/"} color="secondary" className={classes.navlink}>
+                      Home
+                    </Link>
+                  {/* </Typography> */}
+                </Grid>
+                <Grid item>
+                  {/* <Typography variant='h6' className={classes.root}> */}
+                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/about"} color="secondary" className={classes.navlink}>
                     About
                   </Link>
-                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/portfolio"} color="primary">
+                  {/* </Typography> */}
+                </Grid>
+                <Grid item>
+                  {/* <Typography variant='h6' className={classes.root}> */}
+                  <Link component={RouterLink} to={process.env.PUBLIC_URL + "/portfolio"} color="secondary" className={classes.navlink}>
                     Portfolio
                   </Link>
-                </Typography>
-              </Toolbar>
-            </Container>
+                  {/* </Typography> */}
+                </Grid>
+              </Grid>
+            </Toolbar>
           </AppBar>
         </ElevationScroll>
       <Toolbar />

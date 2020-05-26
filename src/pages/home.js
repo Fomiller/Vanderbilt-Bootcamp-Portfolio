@@ -25,11 +25,16 @@ const useStyles = makeStyles((theme) => ({
   },
   wrapper: {
     height: '75vh'
+  },
+  hover: {
+    '&:hover': {
+      color:theme.palette.secondary.dark,
+    }
   }
 }));
 
 export default function Home() {
-  document.title = "Home";
+  document.title = "Forrest Miller | Home";
   const classes = useStyles();
   return(
     <Container className={classes.container}>
@@ -41,13 +46,13 @@ export default function Home() {
         </Grid>
         <Grid item>
           <Button href='https://github.com/Fomiller' target="_blank" align='center'>
-              <GitHubIcon color='secondary' fontSize='large'/>
+              <GitHubIcon color='secondary' fontSize='large' className={classes.hover}/>
           </Button>
           <Button href='https://www.linkedin.com/in/forrest-miller-dev/' target="_blank" align='center'>
-            <LinkedInIcon color='secondary' fontSize='large'/>
+            <LinkedInIcon color='secondary' fontSize='large' className={classes.hover}/>
           </Button>
           <Button href='mailto:forrestmillerj@gmail.com' target="_blank" align='center'>
-            <EmailIcon color='secondary' fontSize='large'/>
+            <EmailIcon color='secondary' fontSize='large' className={classes.hover}/>
           </Button>
         </Grid>
       </Grid>
