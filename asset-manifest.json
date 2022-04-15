@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/Portfolio/static/js/main.b153f7c5.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.b153f7c5.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.4ccc5f44.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.4ccc5f44.js.map",
-    "static/js/2.2015cc3a.chunk.js": "/Portfolio/static/js/2.2015cc3a.chunk.js",
-    "static/js/2.2015cc3a.chunk.js.map": "/Portfolio/static/js/2.2015cc3a.chunk.js.map",
-    "index.html": "/Portfolio/index.html",
-    "precache-manifest.9dbcc11739f2f588c822647e9b1eaf5a.js": "/Portfolio/precache-manifest.9dbcc11739f2f588c822647e9b1eaf5a.js",
-    "service-worker.js": "/Portfolio/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/Portfolio/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.2015cc3a.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.2015cc3a.chunk.js.LICENSE.txt"
+    "main.css": "/vanderbilt-bootcamp-portfolio/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/vanderbilt-bootcamp-portfolio/static/js/main.001be5ae.chunk.js",
+    "main.js.map": "/vanderbilt-bootcamp-portfolio/static/js/main.001be5ae.chunk.js.map",
+    "runtime-main.js": "/vanderbilt-bootcamp-portfolio/static/js/runtime-main.0c8d3f5b.js",
+    "runtime-main.js.map": "/vanderbilt-bootcamp-portfolio/static/js/runtime-main.0c8d3f5b.js.map",
+    "static/js/2.2015cc3a.chunk.js": "/vanderbilt-bootcamp-portfolio/static/js/2.2015cc3a.chunk.js",
+    "static/js/2.2015cc3a.chunk.js.map": "/vanderbilt-bootcamp-portfolio/static/js/2.2015cc3a.chunk.js.map",
+    "index.html": "/vanderbilt-bootcamp-portfolio/index.html",
+    "precache-manifest.2c3508385271422accb92a05866e151a.js": "/vanderbilt-bootcamp-portfolio/precache-manifest.2c3508385271422accb92a05866e151a.js",
+    "service-worker.js": "/vanderbilt-bootcamp-portfolio/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/vanderbilt-bootcamp-portfolio/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.2015cc3a.chunk.js.LICENSE.txt": "/vanderbilt-bootcamp-portfolio/static/js/2.2015cc3a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4ccc5f44.js",
+    "static/js/runtime-main.0c8d3f5b.js",
     "static/js/2.2015cc3a.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.b153f7c5.chunk.js"
+    "static/js/main.001be5ae.chunk.js"
   ]
 }
